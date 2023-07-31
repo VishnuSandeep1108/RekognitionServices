@@ -1,0 +1,14 @@
+<%-include("header")-%>
+
+    <h3>Celebrities Detected</h3>
+    <%celebrities.forEach(function(celebrity){%>
+        <p class="celebsdata" <%=celebsdataview%>>
+            <span>Timestamp: <%=celebrity.Timestamp%></span><br />
+            <span>Name: <%=celebrity.Celebrity.Name%></span><br />
+            <span>Confidence: <%=celebrity.Celebrity.Confidence%></span>
+        </p>
+    <%})%>
+
+    <p class="celebsdata" <%=nomatchview%>>No Celebrities Detected</p>
+</body>
+</html>

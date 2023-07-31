@@ -1,0 +1,135 @@
+body{
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+  }
+
+.head{
+    text-align: center;
+    color: black;
+    background-color: white;
+    height: 80px;
+    margin: 50px auto;
+     box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.15);
+     font-family: 'cinzel', cursive;
+     font-weight: bold;
+  }
+
+input{
+    cursor: pointer;
+}
+.card{
+    background-color: rgb(57, 218, 207);
+    color: #06283D;
+    padding: 20px;
+    margin: 0 10px;
+    border-radius: 18px;
+    font-size: 120%;
+}
+
+.indexbtn :hover{
+    color: white;
+}
+
+.card-img-top{
+    width: 80px;
+    height: 80px;
+    margin: 10px auto;
+}
+
+.card-title{
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.card-text{
+    text-align: left;
+}
+
+.card ul{
+    text-align: justify;
+    /* list-style-position: inside; */
+}
+
+.indexbtn{
+    margin: 30px auto;
+    border-radius: 8px;
+    color: #06283D;
+}
+
+.footer{
+    text-align: center;
+    width: 102.5%;
+    height: 230px;
+    margin-left: -34px;
+    color: grey;
+    margin-top: 80px;
+    padding-top: 70px;
+   box-shadow: inset 0 -3em 8em rgb(57, 218, 207), 0 0 0 2px rgb(57, 218, 207),
+    0.3em 0.3em 0em rgb(57, 218, 207);
+  }
+  
+  
+  .footer h4:hover{
+    color: #06283D;
+  }
+  
+  .footer box-icon{
+    margin-right: 5px;
+    margin-bottom: 30px;
+  }
+  
+
+  /* Actions CSS */
+
+  .actionbtn{
+    display: block;
+    margin: 15px auto;
+    width: 200px;
+  }
+
+  /* Age and Mood CSS */
+
+  .age_detections{
+    border: 2px solid black;
+    width: 200px;
+    height: 30px;
+    margin: 20px auto;
+  }
+
+  .mood_detections{
+    border: 2px solid black;
+    width: 800px;
+    height: 80px;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  /* Sleepy CSS */
+
+  .rgbvalues{
+    font-size: 120%;
+    margin: 30px auto;
+    width: 200px;
+  }
+
+  /* Stranger CSS */
+
+  .strangerform{
+    margin: 80px auto;
+  }
+
+  .strangerdetails{
+    border: 2px solid black;
+    width: 800px;
+    padding: 20px;
+    margin: 30px auto;
+  }
+
+  /* Celebrity CSS */
+
+  .celebsdata{
+    border: 2px solid black;
+    width: 800px;
+    padding: 20px;
+    margin: 30px auto;
+  }

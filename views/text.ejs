@@ -1,0 +1,16 @@
+<%-include("header")-%>
+
+    <h3>Text Detected</h3>
+
+    <%text.forEach(function(text){%>
+        <p class="celebsdata" <%=textdataview%>>
+            <span>Timestamp: <%=text.Timestamp%></span><br />
+            <span>DetectedText: <%=text.TextDetection.DetectedText%></span><br />
+            <span>TextType: <%=text.TextDetection.Type%></span><br />
+            <span>Confidence: <%=text.TextDetection.Confidence%></span>
+        </p>
+    <%})%>
+
+    <p class="celebsdata" <%=nomatchview%>>No Faces Detected</p>
+</body>
+</html>

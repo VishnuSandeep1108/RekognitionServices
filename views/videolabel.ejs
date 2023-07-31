@@ -1,0 +1,15 @@
+<%-include("header")-%> 
+
+    <h3>Segments Detected</h3>
+
+    <%labels.forEach(function(label){%>
+        <p class="celebsdata" <%=labelview%>>
+            <span><b>Name: </b><%=label.Label.Name%></span><br />
+            <span><b>Confidence: </b><%=label.Label.Confidence%></span><br />
+            <span><b>Category: </b><%=label.Label.Categories[0].Name%></span>
+        </p>
+    <%})%>
+
+    <p class="celebsdata" <%=nomatchview%>>No Labels Detected</p>
+</body>
+</html>

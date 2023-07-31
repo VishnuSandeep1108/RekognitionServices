@@ -1,0 +1,109 @@
+<%-include("header")-%>
+
+    <div class="card-deck d-flex justify-content-center flex-wrap p-4">
+
+        <div class="card">
+          <box-icon class="card-img-top" type='solid' name='image' size='lg'></box-icon>
+          <div class="card-body">
+            <h5 class="card-title">IMAGE</h5>
+            <p class="card-text">It can perform</p>
+            <p class="card-text">
+                <small class="text-muted">
+                    <ul>
+                        <li>Age Detection</li>
+                        <li>Mood Detection</li>
+                        <li>Label Detection (Checks for Informal Attire)</li>
+                        <li>Tiredness Detection (Upon examining Eyes)</li>
+                        <li>Stranger Detection (Check if a person belongs to given collection)</li>
+                    </ul>
+             </small>
+            </p>
+          </div>
+
+            <!-- <form class="input-group mb-3" action="/upload" method="post" enctype="multipart/form-data">
+            <div class="input-group-prepend">
+              <button class="input-group-text" type="submit">Upload</button>
+            </div>
+            <div class="custom-file">
+                <input class="custom-file-input" id="customFile" type="file" name="image" accept="image/*">
+                <label class="custom-file-label" for="customFile">Choose file</label>
+            </div>
+          </form> -->
+
+          <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/*">
+            <button class="indexbtn btn btn-secondary" type="submit">Upload</button>
+          </form>
+          
+        </div>
+
+        <div class="card">
+          <box-icon class="card-img-top" type='solid' name='videos' size="lg"></box-icon>
+          <div class="card-body">
+            <h5 class="card-title">VIDEO</h5>
+            <p class="card-text">It can perform</p>
+            <p class="card-text">
+                <small class="text-muted">
+                    <ul>
+                        <li>Celebrity Recognition</li>
+                        <li>Face Detection</li>
+                        <li>Person Tracking</li>
+                        <li>Face Search</li>
+                        <li>Text, Segment and Label Detection</li>
+                    </ul>
+                </small>
+            </p>
+          </div>
+
+          <!-- <form class="input-group mb-3" action="/videoUpload" method="post" enctype="multipart/form-data">
+            <div class="input-group-prepend">
+              <button class="input-group-text" type="submit">Upload</button>
+            </div>
+            <div class="custom-file">
+                <input class="custom-file-input" id="customFile" type="file" name="video" accept="video/*">
+                <label class="custom-file-label" for="customFile">Choose file</label>
+            </div>
+          </form> -->
+
+          <form action="/videoUpload" method="post" enctype="multipart/form-data">
+            <input type="file" name="video" accept="video/*">
+            <button class="indexbtn btn btn-secondary" type="submit">Upload</button>
+        </form>
+        </div>
+
+        <div class="card">
+            <box-icon class="card-img-top" type='solid' name='webcam' size="lg"></box-icon>
+            <div class="card-body">
+              <h5 class="card-title">WEBCAM</h5>
+              <p class="card-text">It can perform</p>
+              <p class="card-text">
+                  <small class="text-muted">
+                    <ul>
+                        <li>Age Detection</li>
+                        <li>Mood Detection</li>
+                        <li>Label Detection</li>
+                    </ul>
+                  </small>
+              </p>
+            </div>
+    
+            <form action="/webcamUpload" method="post">
+                <button class="indexbtn btn btn-secondary" type="submit">WebCam</button>
+            </form>   
+        </div>
+
+    </div>
+
+</body>
+
+<div class="footer">
+    <h4>Vishnu Sandeep Reddy</h4>
+    <h5>© 2023</h5>
+    <box-icon type='logo' name='github' color='rgba(1,1,1,0.47)'></box-icon>
+    <box-icon name='linkedin-square' type='logo' color='rgba(1,1,1,0.47)'></box-icon>
+    <box-icon name='twitter' type='logo' color='rgba(1,1,1,0.47)'></box-icon>
+    <box-icon name='quora' type='logo' color='rgba(1,1,1,0.47)' ></box-icon>
+  </div>
+
+</html>
+

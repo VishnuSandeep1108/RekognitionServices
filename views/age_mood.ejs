@@ -1,0 +1,15 @@
+<%-include("header")-%>
+
+    <h3><%=title%></h3>
+    
+    <%faceDetails.forEach(function(detail){%>
+        <p class="age_detections" <%=ageview%>><%=detail.AgeRange.Low%> to <%=detail.AgeRange.High%></p>
+    <%})%>
+
+    <%faceDetails.forEach(function(detail){%>
+        <p class="mood_detections" <%=moodview%>><%=detail.Emotions[0].Type%><br />
+        <span <%=moodview%>>Confidence: <%=detail.Emotions[0].Confidence%></span>
+        </p>
+    <%})%>
+</body>
+</html>

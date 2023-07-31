@@ -1,0 +1,16 @@
+<%-include("header")-%>
+
+    <h3>Matches Found</h3>
+
+    <%persons.forEach(function(person){%>
+        <p class="celebsdata" <%=identifiedview%>>
+            <span>Timestamp: <%=person.Timestamp%></span><br />
+            <span>Face Id: <%=person.FaceMatches[0].Face.FaceId%></span><br />
+            <span>Similarity: <%=person.FaceMatches[0].Similarity%></span><br />
+            <span>Confidence: <%=person.FaceMatches[0].Face.Confidence%></span>
+        </p>
+    <%})%>
+
+    <p class="celebsdata" <%=nomatchview%>>No Matches Found</p>    
+</body>
+</html>

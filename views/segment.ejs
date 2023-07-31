@@ -1,0 +1,24 @@
+<%-include("header")-%>
+
+    <h3>Segments Detected</h3>
+
+    <%segments.forEach(function(segment){%>
+
+            <p class="celebsdata" <%=techcueview%>>
+                    <span>Segment Type: <%=segment.Type%></span><br />
+                    <span>Start Time Stamp: <%=segment.StartTimecodeSMPTE%></span><br />
+                    <span>End Time Stamp: <%=segment.EndTimecodeSMPTE%></span><br />
+                    <span>Duration: <%=segment.DurationSMPTE%></span><br />   
+
+                <!-- <%if(segment.Type === "Technical_CUE"){%>
+                    <p>
+                        <span><%=segment.TechnicalCueSegment.Type%></span><br />
+                        <span><%=segment.TechnicalCueSegment.Confidence%></span>
+                    </p>
+                <%}%> -->
+            </p>
+    <%})%>
+
+    <p class="celebsdata" <%=nomatchview%>>No Segments Detected</p>
+</body>
+</html>

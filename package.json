@@ -1,0 +1,31 @@
+{
+  "name": "capgemini-intern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "18.16.1",
+    "npm": "9.8.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1421.0",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "jimp": "^0.22.8",
+    "multer": "^1.4.5-lts.1",
+    "opencv4nodejs": "^5.6.0"
+  },
+  "opencv4nodejs": {
+    "disableAutoBuild": 1,
+    "opencvIncludeDir": "C:\\tools\\opencv\\build\\include",
+    "opencvLibDir": "C:\\tools\\opencv\\build\\x64\\vc15\\lib",
+    "opencvBinDir": "C:\\tools\\opencv\\build\\x64\\vc15\\bin"
+  },
+  "author": "",
+  "license": "ISC"
+}
